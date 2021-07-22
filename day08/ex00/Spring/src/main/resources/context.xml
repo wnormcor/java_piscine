@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="printerWithPrefix" class="edu.school21.printer.logic.printer.PrinterWithPrefixImpl">
+        <constructor-arg ref="rendererErrToUpper"/>
+    </bean>
+
+    <bean id="printerWithPrefixErrToLower" class="edu.school21.printer.logic.printer.PrinterWithPrefixImpl">
+        <constructor-arg ref="rendererErrToLower"/>
+    </bean>
+
+    <bean id="printerWithPrefixStdInputToUpper" class="edu.school21.printer.logic.printer.PrinterWithPrefixImpl">
+        <constructor-arg ref="rendererStdImpToUpper"/>
+    </bean>
+
+    <bean id="printerWithPrefixStdInputToLower" class="edu.school21.printer.logic.printer.PrinterWithPrefixImpl">
+        <constructor-arg ref="rendererStdImpToLower"/>
+    </bean>
+
+    <bean id="rendererErrToUpper" class="edu.school21.printer.logic.renderer.RendererErrImpl">
+        <constructor-arg ref="preProcessorToUpper"/>
+    </bean>
+
+    <bean id="rendererErrToLower" class="edu.school21.printer.logic.renderer.RendererErrImpl">
+        <constructor-arg ref="preProcessorToLower"/>
+    </bean>
+
+    <bean id="rendererStdImpToLower" class="edu.school21.printer.logic.renderer.RendererStandardImpl">
+        <constructor-arg ref="preProcessorToLower"/>
+    </bean>
+
+    <bean id="rendererStdImpToUpper" class="edu.school21.printer.logic.renderer.RendererStandardImpl">
+        <constructor-arg ref="preProcessorToUpper"/>
+    </bean>
+
+    <bean id="preProcessorToUpper" class="edu.school21.printer.logic.preprocessor.PreProcessorToUpperImpl">
+    </bean>
+
+    <bean id="preProcessorToLower" class="edu.school21.printer.logic.preprocessor.PreProcessorToLower">
+    </bean>
+
+</beans>

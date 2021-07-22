@@ -1,0 +1,10 @@
+INSERT INTO PRODUCT_TABLE (identifier, name, price) values (1, 'test1', 1);
+INSERT INTO PRODUCT_TABLE (identifier, name, price) values (2, 'test2', 2);
+INSERT INTO PRODUCT_TABLE (identifier, name, price) values (3, 'test3', 3);
+INSERT INTO PRODUCT_TABLE (identifier, name, price) values (4, 'test4', 4);
+INSERT INTO PRODUCT_TABLE (identifier, name, price) values (5, 'test5', 5);
+INSERT INTO PRODUCT_TABLE (identifier, name, price) values (6, 'test6', 6);
+INSERT INTO PRODUCT_TABLE (identifier, name, price) values (7, 'test7', 7);
+INSERT INTO PRODUCT_TABLE (identifier, name, price) values (8, 'test8', 8);
+INSERT INTO PRODUCT_TABLE (identifier, name, price) values (9, 'test9', 9);
+INSERT INTO PRODUCT_TABLE (identifier, name, price) values (10, 'test10', 10);
